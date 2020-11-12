@@ -23,16 +23,3 @@ requestModal.addEventListener('click',(e) =>
 });
 
 
-
-const button = document.querySelector('.call');
-button.addEventListener('click', () => 
-{
-    
-        const sayHello = firebase.functions().httpsCallable('sayHello');
-        sayHello({ name: 'david' }).then(result => 
-        {
-            
-            console.log(result.data);
-        });       
-        
-})
